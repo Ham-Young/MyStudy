@@ -1,0 +1,35 @@
+package com.example.chapter03;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class TextColorActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_text_color);
+
+      TextView tv_code_system=findViewById(R.id.tv_code_system);
+        tv_code_system.setTextColor(Color.GREEN);
+
+        TextView tv_code_eight=findViewById(R.id.tv_code_eight);
+        tv_code_eight.setTextColor(0xff00ff00);
+
+        TextView code_background=findViewById(R.id.code_background);
+        //code_background.setBackgroundColor(Color.GREEN);
+        //颜色来源于资源文件
+        code_background.setBackgroundResource(R.color.green);
+
+
+
+
+
+
+
+
+    }
+}

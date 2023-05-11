@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--margin为视图外部边缘与周围视图的距离-->
+<!--padding为视图内部边缘与里面填充视图的距离-->
+
+<!--最外层的布局背景为灰色-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#00AAFF"
+
+    android:orientation="vertical">
+    <!--中间层的布局背景为黄色-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_margin="20dp"
+        android:background="#FFFF99"
+        android:padding="60dp">
+
+        <!--最内层的视图背景为红色-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF0000" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
