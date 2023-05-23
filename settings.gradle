@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "My  Fist Application"
 include ':app'
 include ':chapter03'
+include ':chapter04'
